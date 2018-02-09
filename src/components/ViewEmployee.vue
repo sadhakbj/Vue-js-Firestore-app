@@ -20,6 +20,7 @@
 
 <script>
     import db from './firebaseInit'
+import { error } from '@firebase/database/dist/esm/src/core/util/util';
     export default {
         name: 'view-employee',
         data() {
