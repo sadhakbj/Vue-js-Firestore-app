@@ -41,6 +41,7 @@
           .then(user => {
             this.$router.replace('admin')
             location.reload()
+            this.$router.go({ path: this.$router.path })
           }, error => alert('Unable to login' + error.message))
       }
     }

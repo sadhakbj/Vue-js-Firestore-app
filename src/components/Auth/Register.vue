@@ -43,7 +43,7 @@
     methods: {
       registerUser() {
         firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
-          .then(user => alert('User has been created successfully'),
+          .then(user => this.$router.go({ path: this.$router.path }),
             error => {
               this.message = error.message
             }
